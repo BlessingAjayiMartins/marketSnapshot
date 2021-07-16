@@ -9,7 +9,9 @@ const PORT = process.env.PORT || 5000
 app.use(express.json())
 
 app.get('/', (req, res) => {
-  res.send('Welcome to Stock Ticker Scraper API.')
+  res.send(`Welcome to Market Snapshot Scraper API.
+  Endpoints: gainers, losers, volatile, active, overbought, oversold.
+  ex: https://marketsnapshot-scraper.herokuapp.com/gainers`)
 })
 
 // GET Gainers (top 100 stock gainers ) 
